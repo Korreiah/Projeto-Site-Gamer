@@ -24,7 +24,7 @@
     justify-content: space-between; /* Empurra o logo para a esquerda e o menu para a direita */
     align-items: center;            /* Alinha os textos perfeitamente na mesma altura vertical */
     width: 100%;
-    padding: 20px 0px;              /* Espaçamento acima e abaixo do menu */
+    padding: 20px 150px;              /* Espaçamento acima e abaixo do menu */
     box-sizing: border-box;
        
 }
@@ -117,10 +117,11 @@
     border-radius:2px;        /* Cantos levemente arredondados */
     display: inline-block;
     justify-content: center;
-    padding-left: 10px;   /* Espaço na esquerda */
+    padding-left: 12px;   /* Espaço na esquerda */
     padding-right: 10px;  /* Espaço na direita */
     padding-top: 5px;  
     padding-bottom: 5px; 
+    margin-right: 80px;
    }
 
 h1 {
@@ -137,10 +138,11 @@ h2 {
     font-weight: 400;
     margin-top: 16px;
     font-size: 18px;
-    margin-left: 500px;
+    margin-left: 570px;
     display: flex;   /* Ativa o modo Flexbox, organizar, alinhar e distribuir o espaço entre os elementos */ 
     justify-content: center;
     max-width: 650px;
+    
     }
 
 .palavra-azul {
@@ -332,16 +334,17 @@ body {
 
     font-size: 10px;
     color: #ff007f;
-    margin-left: 20px;
+    text-align: center;
    
 }
 
 .global-ranks {
-    margin-left: 20px;
+     text-align: center;
     font-family: "Unbounded", sans-serif;
     font-size: 32px;
     vertical-align: top;
     line-height: 1.6;
+    margin-bottom: 10px;
 
 }
 .table-rank .color-global,
@@ -424,4 +427,122 @@ body {
     font-weight: 400;
 }    
 
+/* ==========================================================================
+   AGORA SEM ROLAGEM LATERAL (MOBILE FIRST / REGRAS DE TRAVA)
+   ========================================================================== */
 
+/* Impede que qualquer elemento "vaze" para as laterais da tela */
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+@media (max-width: 768px) {
+    
+    /* Ajustes do Corpo */
+    body {
+        padding: 0; 
+    }
+
+    /* Menu Superior */
+    .menu-central {
+        flex-direction: column;   
+        gap: 15px;                
+        text-align: center;
+        padding: 10px 0;
+        width: 100% !important;
+    }
+    .button-left{
+      margin-right: 170px !important;       
+    }
+
+    #operations-online {
+        margin-left: 0 !important; /* Remove o empurrão lateral */
+        display: block;
+        margin-top: 5px;
+    }
+
+    .top-buttom {
+        word-spacing: 4px; /* Diminui o espaçamento para caber em telas estreitas */
+        font-size: 11px;
+        display: block;    /* Faz os links quebrarem linha se necessário */
+    }
+
+    /* Seção Principal (Hero) */
+    .text-central {
+        margin-top: 50px;          
+        width: 100% !important;
+        padding: 0;
+    }
+
+    h1 {
+        
+        font-size: 28px !important; /* Reduzido para garantir que nenhuma palavra suma na lateral */
+        text-align: center;
+        display: block;             /* Desativa o flex que impedia a quebra de linha natural */
+        word-wrap: break-word;      /* Força a quebra de palavras longas se necessário */
+    }   
+
+    h2 {
+        margin-left: 0 !important;  /* Remove os 500px de margem */
+        font-size: 14px;
+        text-align: center;
+        width: 100% !important;
+        max-width: 100% !important;
+        display: block;             /* Altera o flexbox para bloco simples */
+        padding: 0 5px;
+    }
+
+    /* Botões */
+    .container-botoes {
+        flex-direction: column;    
+        gap: 12px;
+        padding: 10px 10px;           /* Zera as laterais para não espremer o botão */
+        width: 100% !important;
+        background-color: transparent; /* Remove fundos rígidos que possam travar largura */
+        
+      }
+
+    .btn {
+        width: 100% !important;    /* Força o botão a se ajustar à tela do celular */
+        box-sizing: border-box;
+    }
+
+    /* Janela do Terminal (Onde o código C++ fica) */
+    .terminal-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-top: 30px;
+        box-sizing: border-box;
+    }
+
+    /* Tabela do Código */
+    .code-table {
+        display: block;
+        width: 100% !important;
+              
+    }
+
+    .code-table td {
+        padding: 15px 10px;             
+        font-size: 12px;           
+        display: block;            /* Transforma a célula em bloco para respeitar o limite */
+        width: 100% !important;
+        overflow-x: auto;          /* Se uma linha de código for longa, a rolagem acontece SÓ dentro da caixinha preta */
+        white-space: pre-wrap;     /* Força o código a quebrar linha e acompanhar o espaço disponível */
+    }
+
+    .statistic,.global-ranks{
+        text-align: center;
+        margin-right: 10px;
+        
+
+    }
+    .all-tables{
+        width: auto !important;
+        flex-direction: column !important;
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+       
+    }
+  }
