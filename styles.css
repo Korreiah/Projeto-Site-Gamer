@@ -114,7 +114,7 @@
     
     font-size: 11px;
     margin-bottom: 16px;
-    background-color: #111122; /* Sem fundo */
+    background-color: #191919; /* Sem fundo */
     color: #00F0FF;                /* Texto rosa/imagenta */
     border: 1px solid #00F0FF; 
     border-radius:2px;        /* Cantos levemente arredondados */
@@ -181,7 +181,7 @@ word-spacing: 10px;
 .container-botoes {
   display: flex;
   gap: 20px;
-  background-color: #05050a; /* Seu fundo preto */
+  background-color: #191919; /* Seu fundo preto */
   padding: 40px;
 }
 
@@ -232,7 +232,7 @@ word-spacing: 10px;
 
 body {
     font-family: "Courier Prime", monospace;
-    background: #05050a;
+    background: #191919;
     font-weight: 400;
     font-style: normal;
     color: #ffffff;
@@ -242,8 +242,8 @@ body {
 
 /* Janela do terminal */
 .terminal-container {
-  background-color: #0d0d16;
-  border: 1px solid #1a1a2e;
+  background-color: #2d2d2d;
+  border: 1px solid #2f2f2f;
   border-radius: 8px;
   max-width: 800px;
   margin: 0 auto;
@@ -252,7 +252,7 @@ body {
 }
 /* Barra superior do terminal */
 .terminal-header {
-  background-color: #08080e;
+  background-color: #1b1a1a;
   padding: 12px 20px;
   display: flex;
   justify-content: space-between; 
@@ -375,7 +375,7 @@ body {
                                     /*TABELA 1*/
 .table-rank{
      position: relative;    /* Necessário para prender o detalhe em "L" no canto */
-    background-color: #0f0f18;       
+    background-color: #1b1b1b;       
     border: 1px solid #1b1b28;  
     padding: 30px 35px;
     border-radius: 4px;
