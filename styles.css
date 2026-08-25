@@ -473,6 +473,10 @@ html, body {
     }
 
     /* Seção Principal (Hero) */
+    .revenue{
+        display: inline-block;
+        margin-top: 10px;
+    }
     .text-central {
         margin-top: 50px;          
         width: 100% !important;
