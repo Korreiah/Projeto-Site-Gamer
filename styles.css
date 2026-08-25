@@ -138,11 +138,11 @@ h1 {
 }   
 
 h2 {
-    display: inline-block;
+    display: inline-block !important;
     font-weight: 400;
     margin-top: 16px;
     font-size: 18px;
-    justify-content: center;
+    justify-content: center !important;
     max-width: 650px;
     max-height: 650px;
      
