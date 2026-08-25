@@ -6,3 +6,4 @@
 
 
 <img src="https://github.com/Korreiah/Projeto-Site-Gamer/blob/master/assets/sitegamer-desktop.png?raw=true">
+<img src="https://github.com/Korreiah/Projeto-Site-Gamer/blob/master/assets/sitegamer-mobile.png?raw=true">
