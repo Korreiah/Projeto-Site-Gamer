@@ -140,9 +140,10 @@ h2 {
     font-weight: 400;
     margin-top: 16px;
     font-size: 18px;
+    margin-left: 570px;
     max-width: 650px;
-   margin-left: 491px;
-    text-align: center; 
+    max-height: 650px;
+     
     
     }
 
