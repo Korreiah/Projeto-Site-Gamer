@@ -119,11 +119,11 @@
     border-radius:2px;        /* Cantos levemente arredondados */
     display: inline-block;
     justify-content: center;
-    padding-left: 12px;   /* Espaço na esquerda */
+    padding-left: 10px;   /* Espaço na esquerda */
     padding-right: 10px;  /* Espaço na direita */
     padding-top: 5px;  
     padding-bottom: 5px; 
-    margin-right: 80px;
+   
    }
 
 h1 {
