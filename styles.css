@@ -20,12 +20,13 @@
 .menu-central {
 
 
-    display: flex;                  /* Coloca a div do logo e do menu lado a lado */
+    display: inline-flex;                  /* Coloca a div do logo e do menu lado a lado */
     justify-content: space-between; /* Empurra o logo para a esquerda e o menu para a direita */
     align-items: center;            /* Alinha os textos perfeitamente na mesma altura vertical */
     width: 100%;
-    padding: 0px 0px;              /* Espaçamento acima e abaixo do menu */
+    padding: 10px 10px;              /* Espaçamento acima e abaixo do menu */
     box-sizing: border-box;
+    
        
 }
 
@@ -117,10 +118,10 @@
     color: #00F0FF;                /* Texto rosa/imagenta */
     border: 1px solid #00F0FF; 
     border-radius:2px;        /* Cantos levemente arredondados */
-    display: inline-block;
-    justify-content: center;
-    padding-left: 10px;   /* Espaço na esquerda */
-    padding-right: 10px;  /* Espaço na direita */
+    display: inline;
+    align-items: center;
+    padding-left: 5px;   /* Espaço na esquerda */
+    padding-right: 5px;  /* Espaço na direita */
     padding-top: 5px;  
     padding-bottom: 5px; 
    
