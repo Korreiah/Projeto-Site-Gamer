@@ -24,7 +24,7 @@
     justify-content: space-between; /* Empurra o logo para a esquerda e o menu para a direita */
     align-items: center;            /* Alinha os textos perfeitamente na mesma altura vertical */
     width: 100%;
-    padding: 20px 150px;              /* Espaçamento acima e abaixo do menu */
+    padding: 0px 0px;              /* Espaçamento acima e abaixo do menu */
     box-sizing: border-box;
        
 }
